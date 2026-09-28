@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lucky Money E-Wallet</title>
+    <link rel="stylesheet" href="ewallet.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logosection">
+		<img src="luckymoney.jpg" width="50px" alt = "logo" class = "logo">
+            <span>Lucky Money</span>
+        </div>
+
+        <div class="balance">
+            <span>Balance</span>
+            <strong id="headerBalance">₱ 0.00</strong>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <h1>Lucky Money E-Wallet</h1>
+
+        <section class="balancecard">
+            <p>Available Balance</p>
+            <h2 id="mainBalance">₱ 0.00</h2>
+            <p>Savings: <span id="savings">₱ 0.00</span></p>
+        </section>
+		
+	<section class ="detail">
+		<p> Your Money, My Money!</p>
+	</section>
+        <section class="actions">
+
+            <button class="actionbutton" onclick="deposit()">
+                <span class="icon">+</span>
+                <span>Deposit</span>
+            </button>
+
+            <button class="actionbutton" onclick="withdraw()">
+                <span class="icon">↓</span>
+                <span>Withdraw</span>
+            </button>
+
+            <button class="actionbutton" onclick="savings()">
+                <span class="icon">₱</span>
+                <span>Savings</span>
+            </button>
+
+        </section>
+
+        <section class="transactions">
+
+            <h2>Recent Transactions</h2>
+
+            <div class="transactionbox" id="transactions">
+                <p>No transactions yet</p>
+            </div>
+
+        </section>
+
+    </main>
+<footer class="footer">
+
+    <p> 2026 Lucky Money E-Wallet. By John CJ D. Tacliad</p>
+    <p>Your Money, My Money!</p>
+	
+</footer>
+<script src="ewallet.js"></script>
+</body>
+</html>
